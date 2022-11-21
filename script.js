@@ -28,20 +28,20 @@ function getRandomPickedColor() {
   displayColor.textContent = randomColor;
   return randomColor;
 }
-// function checkColor() {
-//   boxes.forEach((box) => {
-//     box.addEventListener("click", (e) => {
-//       if (e.target.dataset.color === pickedColor) {
-//         // document.body.style.background = "#70d448";
-//         document.body.style.backgroundImage = "url('victory.jpg')";
-//         title.innerHTML = "Congratulations!";
-//         // displayColor.innerHTML = "Click Refresh to play again";
-//         // title.classList.add("white");
-//         // displayColor.classList.add("white");
-//       }
-//     });
-// //   });
-// }
+function checkColor() {
+  boxes.forEach((box) => {
+    box.addEventListener("click", (e) => {
+      if (e.target.dataset.color === pickedColor) {
+        // document.body.style.background = "#70d448";
+        document.body.style.backgroundImage = "url('victory.jpg')";
+        title.innerHTML = "Congratulations!";
+        displayColor.innerHTML = "Click Refresh to play again";
+        title.classList.add("white");
+        displayColor.classList.add("white");
+      }
+    });
+  });
+}
 let pickedColor = getRandomPickedColor();
 checkColor();
 
