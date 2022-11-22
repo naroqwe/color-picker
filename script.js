@@ -36,8 +36,8 @@ function checkColor() {
         document.body.style.backgroundImage = "url('victory.jpg')";
         title.innerHTML = "Congratulations!";
         displayColor.innerHTML = "Click Refresh to play again";
-        title.classList.add("white");
-        displayColor.classList.add("white");
+        title.style.color = "white";
+        displayColor.style.color = "white";
       }
     });
   });
